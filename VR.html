@@ -1,0 +1,447 @@
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>  
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
+    <script>var tvOn = false;
+      var fan_on = false;
+      </script>
+    </head>
+    
+<body>
+    
+    
+<a-scene>
+    
+     <!--Assets used in room-->
+    
+         <a-assets>
+                <a-asset-item id="sofa" src="assets/Models/sofa1/sofa1.obj"/>
+                <a-asset-item id="sofam" src="assets/Models/sofa1/sofa1.mtl"/>
+                <a-asset-item id="pine" src="assets/Models/pine/pine.obj"/>
+                <a-asset-item id="pinem" src="assets/Models/pine/pine.mtl"/>
+                <a-asset-item id="window" src="assets/Models/windowFrostedGlass/windowFrostedGlass.obj"/>
+                <a-asset-item id="windowm" src="assets/Models/windowFrostedGlass/windowFrostedGlass.mtl"/>
+                <a-asset-item id="ceilingFan" src="assets/Models/ceilingFan/ceilingFan.obj"/>
+                <a-asset-item id="ceilingFanm" src="assets/Models/ceilingFan/ceilingFan.mtl"/>
+                <a-asset-item id="ceiling_fan" src ="assets/Models/Fan/model.dae"></a-asset-item>
+                <a-asset-item id="bureau3" src="assets/Models/bureau3/bureau3.obj"/>
+                <a-asset-item id="bureau3m" src="assets/Models/bureau3/bureau3.mtl"/>
+                <a-asset-item id="officeChair" src="assets/Models/officeChair/officeChair.obj"/>
+                <a-asset-item id="officeChairm" src="assets/Models/officeChair/officeChair.mtl"/>
+                <a-asset-item id="monitorLCD" src="assets/Models/monitorLCD/monitorLCD.obj"/>
+                <a-asset-item id="monitorLCDm" src="assets/Models/monitorLCD/monitorLCD.mtl"/>
+                <a-asset-item id="clock2" src="assets/Models/clock2/clock2.obj"/>
+                <a-asset-item id="clock2m" src="assets/Models/clock2/clock2.mtl"/>
+                <a-asset-item id="smallbookshelves" src="assets/Models/smallbookshelves/smallbookshelves.obj"/>
+                <a-asset-item id="smallbookshelvesm" src="assets/Models/smallbookshelves/smallbookshelves.mtl"/>
+                <a-asset-item id="speaker" src="assets/Models/speaker/scene.gltf"/>
+                <a-asset-item id="bicycle" src="assets/Models/bicycle/bicycle_v2_L1.123ca60579a1-a092-4d1a-b67e-f7f8d23e7c8c/11717_bicycle_v2_L1.obj"/>
+                <a-asset-item id="bicycle" src="assets/Models/bicycle/bicycle_v2_L1.123ca60579a1-a092-4d1a-b67e-f7f8d23e7c8c/11717_bicycle_v2_L1.mtl"/> 
+             <a-asset-item id="bed" src="assets/Models/Full_Size_Bed_with_White_Sheets_Black_V13f32ae55-d026-44a9-9117-2d1f73349584/Full_Size_Bed_with_White_Sheets_Black_V1.obj"/> 
+             <a-asset-item id="bedm" src="assets/Models/Full_Size_Bed_with_White_Sheets_Black_V13f32ae55-d026-44a9-9117-2d1f73349584/Full_Size_Bed_with_White_Sheets_Black_V1.mtl"/> 
+                
+             <!-- Video -->
+	   			 <video id="tv" src="assets/videos/covid.mp4" autoplay loop="true"></video>
+        </a-assets>
+    
+<!--camera position -->
+    
+               <a-entity position="70 1 6" rotation="0 90 0">
+                       <a-camera universal-controls>
+                                 <a-entity cursor="fuse: true; maxDistance: 20; timeout: 250" position="0 0 -5" geometry="primitive: ring" material="color: white; shader: flat" rotation="" scale="0.1 0.1 0.1" visible="" raycaster="">
+                                 </a-entity>
+                        </a-camera>
+                    
+               </a-entity>
+
+<!--ceiling -->  
+    
+              <a-entity static-body="" geometry="primitive: box; depth: 45; height: 0.09; width: 79" position="40 14 5" material="shader: flat; side: double; opacity: 1; src: url(images/ceiling.jpg); repeat: 20 12" rotation="" scale="" visible="">
+              </a-entity>
+            
+            
+<!--floortexture -->
+            
+              <a-entity shadow="cast:true;receive:true;"  static-body="" geometry="primitive: box; depth: 40; height: 0.1; width: 80" position="40 -0.5 5" material="shader: flat; side: double; opacity: 1; src: url(images/floortexture.jpg); repeat: 12 5" shadow="cast:true;receive:true;" rotation="" scale="" visible="">
+              </a-entity>
+            
+            
+<!-- Painting -->
+            
+              <a-entity geometry="primitive: box; depth: 1; height: 11; width: 8" position="65.5 6 -15" rotation="0 0 0" material="shader: standard;
+              roughness: 1; src: url(images/beam1.jpg); repeat: 1 " scale="" visible="">
+              </a-entity>
+            
+<!--front wall -->
+            
+               <a-entity shadow="cast:true;receive:true;" geometry="primitive: box; depth: 0.6; height: 1; width: 40" position="79.7 13.5 5" rotation="0 90 0" material="shader: standard;
+               roughness: 1; src: url(images/beam.jpg); repeat: 9 1">
+               </a-entity>
+            
+                <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 40" position="80 6.5 5" rotation="0 90 0" material="shader: standard;
+                roughness: 1; src: url(images/wall2.jpg); repeat: 4 2">
+                </a-entity>
+            
+ <!--back wall -->
+            
+              <a-entity  geometry="primitive: box; depth: 0.6; height: 1; width: 40" position="0 13.5 5" rotation="0 90 0" material="shader: standard;
+              roughness: 1; src: url(images/beam2.jpg); repeat: 9 1" scale="" visible="">
+              </a-entity>
+            
+               <a-entity static-body="" geometry="primitive: box; depth: 1; height: 14; width: 40" position="-0.5 6.5 5" rotation="0 90 0"  material="shader: standard;
+                roughness: 1; src: url(images/beam2.jpg); repeat: 4 2" scale="" visible="">
+                </a-entity>
+            
+            
+  <!--Left wall -->
+    
+                <a-entity geometry="primitive: box; depth: 0.6; height: 1; width: 80" position="40 13.5 25" rotation="0 0 0" material="shader: standard;
+                roughness: 1; src: url(images/beam2.jpg); repeat: 32 1" scale="" visible="">
+                </a-entity>
+                 <a-entity static-body="" geometry="primitive: box; depth: 1; height: 14; width: 80" position="40 6.5 25.5" rotation="0 0 0" material="shader: standard;
+                 roughness: 1; src: url(images/beam.jpg); repeat: 12 2" scale="" visible="">
+                 </a-entity>
+            
+<!--right wall -->
+            
+                 <a-entity geometry="primitive: box; depth: 0.6; height: 1; width: 80" position="40 13.5 -14.5" rotation="0 0 0" material="shader: standard;
+                 roughness: 1; src: url(images/beam2.jpg); repeat: 32 1" scale="" visible=""></a-entity>
+    
+                 <a-entity static-body="" geometry="primitive: box; depth: 1; height: 14; width: 80" position="40 6.5 -15.5" rotation="0 0 0" material="shader: standard;
+                 roughness: 1; src: url(images/beam.jpg); repeat: 12 2" scale="" visible=""></a-entity>
+            
+          
+  <!-- tv -->
+
+ 
+    		 	<a-entity position="0 3.00 5.00">
+		 		<a-box position="0 4 0" height="8" width="0.3" depth="13" color="#292929"></a-box>
+		 		<a-box id="tvScreen" onclick="tvClick()" position="0.25 4 0" rotation="0 90 0" height="7" width="12" depth="0.1" color="black" material="side:double; src: #tv; shader: flat"></a-box>
+		 		<a-text id="tvText" value="Turn on TV" align="center" color="#FFF" position="0.4 4 0" scale="3 3 3" rotation="0 90 0"></a-text>
+		 	</a-entity>
+    
+   <!-- sofa -->
+           
+                        <a-obj-model
+                            src="#sofa"
+                            mtl="#sofam"
+                            scale="0.05 0.05 0.05"
+                            position="19.000 0.00 -0.50"
+                                     rotation="0 270 0">
+                        </a-obj-model>
+    
+  <!-- tree(decoration) --> 
+    
+                        <a-obj-model
+                            src="#pine"
+                            mtl="#pinem"
+                            scale="0.01 0.01 0.01"
+                            position="19.000 0.00 -9.00"
+                                     rotation="0 270 0">
+                        </a-obj-model>
+                        
+   <!-- window --> 
+    
+                        <a-obj-model
+                            src="#window"
+                            mtl="#windowm"
+                            scale="1.0 1.0 1.0"
+                            position="40.000 6.00 -15.00"
+                                     rotation="0 180 0">
+                        </a-obj-model>
+    
+  <!-- computer table -->
+    
+                         <a-obj-model
+                            src="#bureau3"
+                            mtl="#bureau3m"
+                            scale="0.05 0.05 0.05"
+                            position="35.000 1.45 23.00"
+                                     rotation="0 0 0">
+                        </a-obj-model>
+    
+     <!-- office chair -->
+            
+                        <a-obj-model
+                            src="#officeChair"
+                            mtl="#officeChairm"
+                            scale="0.05 0.05 0.05"
+                            position="18.000 6.30 10.00"
+                                     rotation="0 0 0">
+                        </a-obj-model>
+                        
+     <!-- monitor -->
+                          
+                        <a-obj-model
+                            src="#monitorLCD"
+                            mtl="#monitorLCDm"
+                            scale="4 4 4"
+                            position="35.000 5.50 19.50"
+                                     rotation="0 -180 0">
+                        </a-obj-model>
+    
+    <!-- clock --> 
+                          <a-obj-model
+                            src="#clock2"
+                            mtl="#clock2m"
+                            scale="0.05 0.05 0.05"
+                            position="14.000 6.30 -35.9"
+                                     rotation="0 0 0">
+                        </a-obj-model>
+    
+     <!-- bookshelves --> 
+                         <a-obj-model
+                            src="#smallbookshelves"
+                            mtl="#smallbookshelvesm"
+                            scale="2 2 2"
+                            position="23.000 -0.40 24.68"
+                                     rotation="0 180 0">
+                        </a-obj-model>
+            
+     <!-- ceilingFan -->
+    
+
+    
+    <a-entity id="ceiling_fan_entity" position="45.000 11.55 6.717">
+					<a-entity
+					collada-model="#ceiling_fan" rotation="0 180 0" position="8.851 -0.349  -5.667" scale="6 6 6">
+					</a-entity>
+					<a-animation id="ceiling_fan_animation" attribute="rotation"
+						begin="start" end="stop"
+               			dur="20000"
+               			to="0 4000 0"
+               			repeat="indefinite"></a-animation>
+
+				</a-entity>
+    
+     <!-- bicycle --> 
+                        <a-obj-model
+                            src="#bicycle"
+                            mtl="#bicycle"
+                            scale="0.1 0.1 0.1"
+                            position="69.794  -0.343 23.418  "
+                                     rotation="-73.167 1.891 -179.956">
+                        </a-obj-model>
+    
+    
+      
+    <!-- Bed -->
+    
+                       <a-obj-model
+                            src="#bed"
+                            mtl="#bedm"
+                            scale="0.04 0.03 0.05"
+                            position="46.435 2.100 21.085"
+                                     rotation="-90.0 -90.0 -180.0">
+                        </a-obj-model>
+        
+   <!-- relaxation chair -->
+            
+                        <a-gltf-model src="assets/Models/chair/scene.gltf" position="42.347 1.774 -11.855" scale="2 2 2" rotation="0 180 0"></a-gltf-model>
+    
+    <!-- speaker -->
+            
+                        <a-gltf-model src="assets/Models/speaker/scene.gltf" position="49.582 1.686 -13.305" scale="2 2 2" rotation="0 180 0"></a-gltf-model>
+    <!-- music -->
+            
+                         <a-box material="color:tomato;transparent:true;opacity:0" depth="2" height="2" width="2" sound="src: url(assets/friends.mp3); on: click" class="intersectable" position="49.582 1.686 -13.305"></a-box>
+    
+    <!-- click the speaker for music label -->
+    
+                        <a-text value="click the speaker !" position="49.582 4.686 -13.305" width="15" color="#999999" text="click the speaker !">  </a-text>
+
+   <!-- sanitizer table -->
+    
+                         <a-gltf-model src="assets/Models/wooden_pedestal/scene.gltf" position="52.025 -0.304 23.062" scale=" 4 4 4 " rotation="0 180 0"></a-gltf-model>
+    
+    <!-- sanitizer bottle -->
+    
+                        <a-gltf-model src="assets/Models/sanitizer_bottle/scene.gltf" position="52.309 2.821 22.662" scale=" 0.05 0.05 0.05 " rotation="0 180 0"></a-gltf-model>
+            
+    <!-- face mask -->
+            
+                        <a-gltf-model src="assets/Models/surgical_mask/scene.gltf" position="52.408 -5.471 23.408" scale=" 0.05 0.05 0.05 " rotation="0 180 0"></a-gltf-model>
+    
+  
+    
+    
+    <!--face mask on bicycle -->
+
+                         <a-gltf-model src="assets/Models/surgical_mask/scene.gltf" position="69.16 -4.901 24.126" scale=" 0.05 0.05 0.05 " rotation="0 180 0"></a-gltf-model>       
+
+     <!-- fridge -->
+            
+                          <a-gltf-model src="assets/Models/retro_fridge/scene.gltf" position="71.249 3.449 -13.130" scale=" 4 4 4 " rotation="0 270 0"></a-gltf-model> 
+    
+    
+    <!-- fruit basket -->
+
+                          <a-gltf-model src="assets/Models/fruit_baskets/scene.gltf" position="76.669 -0.320 -9.037" scale=" 0.013 0.013 0.013 " rotation="0 0 0"></a-gltf-model> 
+    
+    <!-- buster done -->
+    
+                            
+                          <a-entity gltf-model="assets/Models/buster_drone/scene.gltf" color="red" position="57.606  0.314  7.353" scale="0.04 0.04 0.04" animation-mixer></a-entity>
+    
+            
+         
+     <!-- basketball-->
+                           <a-sphere position="41.250 0.314 5.000" material="repeat:3 2;roughness:1;src:images/basketball.jpg" scale="0.8 0.8 0.8" geometry="" class="intersectable">
+
+                           <a-animation attribute="position" from="41.250 0.314 5.000" to="41.250 5.314 5.000" dur="2000" direction="alternate" repeat="indefinite" begin="click"></a-animation>
+                           </a-sphere>
+    
+    <!-- click the ball label-->
+            
+                            <a-text value="Click the ball!" position="41.250 0.314 5.000" width="15" color="#999999" text="Click the ball!">  </a-text>
+                          
+    <!--lights-->        
+
+            
+                      <a-entity light="type: ambient; color: #BBB"></a-entity>
+            
+                       <a-light id="light" type="point" color="black" intensity="1" position="-6.329 1.0 0.817">
+                
+                                <a-animation begin="red" attribute="color" from="black" to="red"></a-animation>
+                                <a-animation begin="green" attribute="color" from="black" to="green"></a-animation>
+                                <a-animation begin="black" attribute="color" from="black" to="black"></a-animation>
+
+                       </a-light>
+            
+   <!-click to change light colour text-->   
+    
+                        <a-text value="click to switch on Fan and light colours !" position="51.791 10.8 -14.884" width="15" color="#999999" text="click to change light colours !">  </a-text>
+            
+  <!--red green black colour lights-->
+    
+                       <a-box onclick="changeColor('green');" color="green" depth="0.5" height="0.5" width="0.5" class="intersectable" position="59.791 5.8 -14.884" rotation="0 180 0"></a-box>
+            
+                       <a-box onclick="changeColor('red');" color="red" depth="0.5" height="0.5" width="0.5" class="intersectable" position="59.791 7.8 -14.884" rotation="0 -47.211722318779834 0"></a-box>
+    
+                        <a-box onclick="changeColor('black');" color="black" depth="0.5" height="0.5" width="0.5" class="intersectable" position="59.791 9.8 -14.884" rotation="0 -47.211722318779834 0"></a-box> 
+    
+            <a-box id="ceiling_fan_switch" scale="1.3 0.2 0.8" color="#FF0000" class="intersectable" onclick="setFan()" position="59.791 11.8 -14.884"></a-box>
+    
+    
+ 
+   
+    <!--script to change colour-->
+    
+                   <script>
+                         function changeColor(color) {
+                                document.querySelector('#light').emit(color);
+                                                     };
+                   </script>
+            
+   <!--unique model which i have created for decoration item-->        
+            
+                      <a-box
+                          color="#0000FF"
+                          width="5" height="5" depth="5"
+                          position="25.161 1.953 -12.563">
+                      </a-box>
+            
+                       <a-sphere color="yellow" radius="5" position="25.640 4.942 -12.837" scale="0.5 0.5 0.5"></a-sphere>
+
+                      <a-box
+                          color="yellow"
+                          width="2" height="2" depth="2"
+                          position="26.213 1.211 -9.914">
+                      </a-box>
+            
+                     <a-box
+                          color="red"
+                          width="0.5" height="0.5" depth="0.5"
+                          position="26.840 1.481 -8.869">
+                    </a-box>
+    
+    
+     <!--door-->
+    
+                     <a-box position="57.475 3.52 24.606" scale="4 8 0.1" color="#f67474" rotation="0 180 0" material="color:#950b0b;emissive:#585858;metalness:0.3" id="front_door" geometry="" visible="true" onclick="setFrontDoorPosition()" static-body class="intersectable"> 
+                     </a-box>
+            
+            
+    <!--script to open door-->
+    
+                  <script>
+					var front_door_opened_position = new Object({x: 57.475, y: 3.52, z: 24.606});
+					var front_door_opened_rotation = new Object({x: 0, y: 180, z: 0})
+					var front_door_closed_position = new Object({x: 57.475, y: 3.52, z: 22.606});
+					var front_door_closed_rotation = new Object({x: 0, y: 90, z: 0})
+					var front_isOpened = false;
+					var front_isClosed = true;
+
+				function setFrontDoorPosition(){
+					var my_door = document.querySelector('#front_door');
+					if(front_isClosed){
+						my_door.setAttribute('position', front_door_opened_position);
+						my_door.setAttribute('rotation', front_door_opened_rotation);
+						front_isOpened = true;
+						front_isClosed = false;
+					                  }
+					else if(front_isOpened){
+						my_door.setAttribute('position', front_door_closed_position);
+						my_door.setAttribute('rotation', front_door_closed_rotation);
+						front_isOpened = false;
+						front_isClosed = true;
+					                       }
+				                            }
+                         
+                    </script>
+    
+    
+    <script type="text/javascript">
+				
+				function tvClick()
+				{
+					var tv = document.querySelector("#tvScreen");
+					var text = document.querySelector("#tvText");
+
+					if(!tvOn)
+					{
+						text.setAttribute('visible', 'false');
+						tv.setAttribute('material', 'color', 'white');
+						tvOn = true;
+					}
+					else
+					{
+						tv.setAttribute('material', 'color', 'black');
+						tvOn = false;
+					}
+				}
+        
+ 
+    
+    
+    function setFan(){
+					var fan_switch = document.querySelector('#ceiling_fan_switch');
+					if(fan_on){
+						document.querySelector('#ceiling_fan_entity').emit('stop');
+						fan_switch.setAttribute('color', "#FF0000");
+						fan_on = false;
+					}
+					else{
+						fan_on = true;
+						document.querySelector('#ceiling_fan_entity').emit('start');
+						fan_switch.setAttribute('color', "#00ff40");
+					}
+				}
+        
+           </script>
+    
+    <!--text to open the door--> 
+    
+                    <a-text value="click the door to open!" position="55 2.04 21.062" width="15" color="#999999" text="click the door to open!">  
+                    </a-text>
+                    <a-box
+                     color="black"
+                     width="4" height="8" depth="0.1"
+                     position="57.148 3.656 24.920">
+                    </a-box>                           
+   </a-scene>
+</body>
+</html>
