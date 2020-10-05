@@ -9,15 +9,21 @@ Video link:
 # Advantages of this project:
 
 1.The basics of Three.js and A-Frame
+
 2.How to bind objects to JavaScript functions (using onlick="functionName()")
+
 3.How the Document Object Model works (DOM)
+
 4.Front-end design techniques that greatly take into consideration UX
+
 5.How to manipulate 3-D .gltf models
+
 6.General JavaScript library usage
 
 # Challenges Faced:
 
 1.I have taken long time to position models but later I was able to do quickly because of practise
+
 2.I have tried to play TV but sometimes video is not displaying. still I need to check this issue.
 
 
