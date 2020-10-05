@@ -143,8 +143,7 @@ When we click on ball,it will move up and down
 
 ![Capture5](https://user-images.githubusercontent.com/72331508/95038135-122f9700-0693-11eb-8238-035d2ee8e7b8.PNG)
 
-![Capture7](https://user-images.githubusercontent.com/72331508/95031815-98d97980-067d-11eb-9230-99f4af10a248.PNG)
-
+![Capture8](https://user-images.githubusercontent.com/72331508/95031817-9bd46a00-067d-11eb-8e5b-923f78f97029.PNG)
 
 #### 5.Music:
 
@@ -152,7 +151,7 @@ When we click on speaker, it will produce a music.
 
 ![Capture2](https://user-images.githubusercontent.com/72331508/95038122-08a62f00-0693-11eb-826b-d36659b6c49b.PNG)
 
-![Capture8](https://user-images.githubusercontent.com/72331508/95031817-9bd46a00-067d-11eb-8e5b-923f78f97029.PNG)
+![Capture7](https://user-images.githubusercontent.com/72331508/95031815-98d97980-067d-11eb-9230-99f4af10a248.PNG)
 
 #### Unique model which i have created for decoration item:
 
