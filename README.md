@@ -91,22 +91,37 @@ Example
 
 Interactable Objects:
 
-Door: I have used below java script to change door position when i click on the door.
+1.Door:
+
+I have used below java script to change door position when i click on the door.
 
 ![Capture4](https://user-images.githubusercontent.com/72331508/95031585-6a0ed380-067c-11eb-8042-538cf85b508b.PNG)
 
 
-Fan: please find the below java script to code for using roation of fan.
+2.Fan:
+
+please find the below java script to code for using roation of fan.
 ![Capture5](https://user-images.githubusercontent.com/72331508/95031587-6da25a80-067c-11eb-987c-d1c4c3ed6456.PNG)
 
 
-Different colour lights
+3.Different colour lights:
 
 we can change colour of light by interacting with switches and used below java script:
 
 ![Capture6](https://user-images.githubusercontent.com/72331508/95031589-7004b480-067c-11eb-9eac-005079d0878d.PNG)
 
+4.Ball:
 
-unique model which i have created for decoration item:
+When we click on ball,it will move up and down
+
+
+
+5.Music:
+
+When we click on speaker, it will produce a musice
+
+
+
+Unique model which i have created for decoration item:
 
 ![Capture3](https://user-images.githubusercontent.com/72331508/95031583-6713e300-067c-11eb-907a-403d2cddc3e7.PNG)
