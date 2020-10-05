@@ -95,10 +95,14 @@ models were used to fill the house, and they were loaded using obj-model and glt
 
 17.buster done
 
+18.TV
+
 Example
 
 ![Capture2](https://user-images.githubusercontent.com/72331508/95031275-c244d600-067a-11eb-82fc-7584eee9903f.PNG)
 
+
+![Capture11](https://user-images.githubusercontent.com/72331508/95040210-9fc1b580-0698-11eb-942b-7e5ee15ff840.PNG)
 
 
 #### Interactable Objects:
