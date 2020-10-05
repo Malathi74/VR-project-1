@@ -41,9 +41,15 @@ I have created a room where i have been during lockdown of covid19. I have added
 
 1. Many baskets with fruits are kept in room because I couldn't go out everytime when I need food items that's the reason for more amount of fruits.
 
+![Capture8](https://user-images.githubusercontent.com/72331508/95039821-73f20000-0697-11eb-93b8-7f67ecb542d6.PNG)
+
 2. You can observe sanitizer and mask on table which is beside door so every time when i come from outside,I use sanitizer.
 
+![Capture10](https://user-images.githubusercontent.com/72331508/95039802-689ed480-0697-11eb-8660-9f9943f08ab8.PNG)
+
 3. We can see masks on bike, whenever I go out by bike,I won't forget mask as it is already placed.
+
+![Capture9](https://user-images.githubusercontent.com/72331508/95039816-6e94b580-0697-11eb-8b3e-2933df7a74d8.PNG)
 
 This is room overview.
 
