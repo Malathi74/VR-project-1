@@ -95,12 +95,17 @@ Example
 
 I have used below java script to change door position when i click on the door.
 
+![Capture1](https://user-images.githubusercontent.com/72331508/95038113-02b04e00-0693-11eb-8155-c03358f7a585.PNG)
+
 ![Capture4](https://user-images.githubusercontent.com/72331508/95031585-6a0ed380-067c-11eb-8042-538cf85b508b.PNG)
 
 
 ## 2.Fan:
 
 please find the below java script to code for using roation of fan.
+
+![Capture6](https://user-images.githubusercontent.com/72331508/95038142-152a8780-0693-11eb-885f-78c0478ccf29.PNG)
+
 ![Capture5](https://user-images.githubusercontent.com/72331508/95031587-6da25a80-067c-11eb-987c-d1c4c3ed6456.PNG)
 
 
@@ -108,12 +113,17 @@ please find the below java script to code for using roation of fan.
 
 we can change colour of light by interacting with switches and used below java script:
 
+![Capture3](https://user-images.githubusercontent.com/72331508/95038128-0cd24c80-0693-11eb-83c0-d79985dabdea.PNG)
+
+![Capture4](https://user-images.githubusercontent.com/72331508/95038133-0f34a680-0693-11eb-9c73-09ce6d423db8.PNG)
+
 ![Capture6](https://user-images.githubusercontent.com/72331508/95031589-7004b480-067c-11eb-9eac-005079d0878d.PNG)
 
 ## 4.Ball:
 
 When we click on ball,it will move up and down
 
+![Capture5](https://user-images.githubusercontent.com/72331508/95038135-122f9700-0693-11eb-8238-035d2ee8e7b8.PNG)
 
 ![Capture7](https://user-images.githubusercontent.com/72331508/95031815-98d97980-067d-11eb-9230-99f4af10a248.PNG)
 
@@ -121,6 +131,8 @@ When we click on ball,it will move up and down
 ## 5.Music:
 
 When we click on speaker, it will produce a music.
+
+![Capture2](https://user-images.githubusercontent.com/72331508/95038122-08a62f00-0693-11eb-826b-d36659b6c49b.PNG)
 
 ![Capture8](https://user-images.githubusercontent.com/72331508/95031817-9bd46a00-067d-11eb-8e5b-923f78f97029.PNG)
 
