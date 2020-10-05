@@ -72,7 +72,7 @@ models were used to fill the house, and they were loaded using obj-model tag wit
 11.Plant
 
 Example:
-                        <a-obj-model
+                      <a-obj-model
                             src="#window"
                             mtl="#windowm"
                             scale="1.0 1.0 1.0"
