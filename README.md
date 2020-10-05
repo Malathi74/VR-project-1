@@ -127,3 +127,22 @@ When we click on speaker, it will produce a music.
 Unique model which i have created for decoration item:
 
 ![Capture3](https://user-images.githubusercontent.com/72331508/95031583-6713e300-067c-11eb-907a-403d2cddc3e7.PNG)
+
+
+External model sources
+
+https://sketchfab.com/
+
+https://www.cgtrader.com/free-3d-models
+
+https://free3d.com/3d-models/
+
+https://clara.io/library
+
+References:
+
+https://aframe.io/docs/1.0.0/introduction/
+
+https://www.youtube.com/channel/UCK2U85UiKw45EBAUS1YU85Q
+
+https://www.youtube.com/watch?v=_foufB0v1Zg
