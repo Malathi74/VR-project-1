@@ -1,6 +1,6 @@
 # VR-project-1
 
- My room during covid pandemic
+ My room during lockdown of covid pandemic
  
 Demo: https://malathi74.github.io/VR-project-1/
 
@@ -10,9 +10,9 @@ Video link: https://www.youtube.com/embed/p9Gq1xDrPQE
 
 1.The basics of Three.js and A-Frame
 
-2.How to bind objects to JavaScript functions (using onlick="functionName()")
+2.Binding objects to JavaScript functions (using onlick="functionName()")
 
-3.How the Document Object Model works (DOM)
+3.Using Document Object Model works (DOM)
 
 4.Front-end design techniques that greatly take into consideration UX
 
@@ -20,9 +20,11 @@ Video link: https://www.youtube.com/embed/p9Gq1xDrPQE
 
 6.General JavaScript library usage
 
+7.This is individual project which boost my confidence 
+
 #### Challenges Faced:
 
-1.I have taken long time to position models but later I was able to do quickly because of practise
+1.I have taken more time to position models but later I was able to do quickly because of practise
 
 2.I have tried to play TV but sometimes video is not displaying. still I need to check this issue.
 
@@ -34,6 +36,14 @@ Individual project; All work was completed by Malathi Kadipikonda.
 #### Description:
 
 I have created a room where i have been during lockdown of covid19. I have added items TV,computer,speakers,bicycle,sofa, decorated items, clock, fan, light etc. which were in my room.
+
+#### Differences due to covid:
+
+1. Many baskets with fruits are kept in room because I couldn't go out everytime when I need food items that's the reason for more amount of fruits.
+
+2. You can observe sanitizer and mask on table which is beside door so every time when i come from outside,I use sanitizer.
+
+3. We can see masks on bike, whenever I go out by bike,I won't forget mask as it is already placed.
 
 This is room overview.
 
@@ -98,7 +108,9 @@ I have used below java script to change door position when i click on the door.
 
 #### 2.Fan:
 
-please find the below java script to code for using roation of fan.
+When i click on switch fan will start rotation and colour of switch will be changed to green.
+
+Fan can be stopped when i click on switch again and colour of switch will change to red.
 
 ![Capture6](https://user-images.githubusercontent.com/72331508/95038142-152a8780-0693-11eb-885f-78c0478ccf29.PNG)
 
@@ -107,7 +119,7 @@ please find the below java script to code for using roation of fan.
 
 #### 3.Different colour lights:
 
-we can change colour of light by interacting with switches and used below java script:
+we can change colour of light by interacting with switches. Blue red and black switches are implemented. when we click on different switches the corresponding colour shade will be given in room.
 
 ![Capture3](https://user-images.githubusercontent.com/72331508/95038128-0cd24c80-0693-11eb-83c0-d79985dabdea.PNG)
 
@@ -132,7 +144,9 @@ When we click on speaker, it will produce a music.
 
 ![Capture8](https://user-images.githubusercontent.com/72331508/95031817-9bd46a00-067d-11eb-8e5b-923f78f97029.PNG)
 
-Unique model which i have created for decoration item:
+#### Unique model which i have created for decoration item:
+
+![Capture7](https://user-images.githubusercontent.com/72331508/95038934-fc22d600-0694-11eb-9d89-3dcb5e4efb9f.PNG)
 
 ![Capture3](https://user-images.githubusercontent.com/72331508/95031583-6713e300-067c-11eb-907a-403d2cddc3e7.PNG)
 
