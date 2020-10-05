@@ -115,12 +115,14 @@ we can change colour of light by interacting with switches and used below java s
 When we click on ball,it will move up and down
 
 
+![Capture7](https://user-images.githubusercontent.com/72331508/95031815-98d97980-067d-11eb-9230-99f4af10a248.PNG)
+
 
 5.Music:
 
-When we click on speaker, it will produce a musice
+When we click on speaker, it will produce a music.
 
-
+![Capture8](https://user-images.githubusercontent.com/72331508/95031817-9bd46a00-067d-11eb-8e5b-923f78f97029.PNG)
 
 Unique model which i have created for decoration item:
 
