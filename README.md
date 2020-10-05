@@ -97,6 +97,12 @@ models were used to fill the house, and they were loaded using obj-model and glt
 
 18.TV
 
+![Capture12](https://user-images.githubusercontent.com/72331508/95040493-6f2e4b80-0699-11eb-85b1-f47f6a8c326a.PNG)
+
+
+![Capture13](https://user-images.githubusercontent.com/72331508/95040496-7190a580-0699-11eb-9e43-85507bb12846.PNG)
+
+
 Example
 
 ![Capture2](https://user-images.githubusercontent.com/72331508/95031275-c244d600-067a-11eb-82fc-7584eee9903f.PNG)
