@@ -47,4 +47,35 @@ To create walls, a-box tag was used and also it was given specific attributes to
 
 ![wall](https://user-images.githubusercontent.com/72331508/95030654-c40c9a80-0676-11eb-867b-8ee6e5aa0b8f.PNG)
 
-models were used to fill the house, and they were loaded using a-gltf-model tag with appropiate attributes such as, position, rotation, scale, etc
+models were used to fill the house, and they were loaded using obj-model tag with appropiate attributes such as, position, rotation, scale, etc
+
+1.Sofa
+
+2.Window
+
+3.Ceiling_fan
+
+4.OfficeChair 
+
+5.MonitorLCD
+
+6.Clock
+
+7.Smallbookshelves
+
+8.Speaker
+
+9.Bicycle
+
+10.Bed
+
+11.Plant
+
+Example:
+                        <a-obj-model
+                            src="#window"
+                            mtl="#windowm"
+                            scale="1.0 1.0 1.0"
+                            position="40.000 6.00 -15.00"
+                                     rotation="0 180 0">
+                        </a-obj-model>
