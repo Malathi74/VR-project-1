@@ -71,11 +71,8 @@ models were used to fill the house, and they were loaded using obj-model tag wit
 
 11.Plant
 
+12.Computer table
+
 Example:
-                      <a-obj-model
-                            src="#window"
-                            mtl="#windowm"
-                            scale="1.0 1.0 1.0"
-                            position="40.000 6.00 -15.00"
-                                     rotation="0 180 0">
-                        </a-obj-model>
+
+![Capture2](https://user-images.githubusercontent.com/72331508/95031275-c244d600-067a-11eb-82fc-7584eee9903f.PNG)
